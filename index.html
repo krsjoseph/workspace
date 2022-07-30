@@ -17,6 +17,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/alpinejs" defer></script>
   <script src="https://unpkg.com/tailwindcss-jit-cdn"></script>
+  <script defer data-domain="remoteworkspace.rentals" src="https://plausible.io/js/plausible.js"></script>
   <style type="text/tailwindcss">
     @tailwind base;
             @tailwind components;
@@ -168,14 +169,21 @@
               <p class="mt-2 text-lg text-gray-600 sm:mt-8 font-pj">Get access to a premium monitor,
                 ergonomic chair, keyboard and speakers wherever you are.</p>
 
-              <form data-netlify-recaptcha="true" name="join" data-netlify="true" action="/thanks" method="POST"
+              <form   netlify-honeypot="bot-field"
+               name="join" data-netlify="true" action="/thanks" method="POST"
                 class="mt-8 sm:mt-10">
+
+                <p style="color: transparent; display: none;">
+                  <label>
+                    Don’t fill this out if you’re human: <input name="bot-field" />
+                  </label>
+                </p>
+                
                 <div
                   class="relative p-2 sm:border sm:border-gray-400 group sm:rounded-xl sm:focus-within:ring-1 sm:focus-within:ring-gray-900 sm:focus-within:border-gray-900">
                   <input type="email" name="email" id="email" placeholder="Enter email address"
                     class="block w-full px-4 py-4 text-gray-900 placeholder-gray-900 bg-transparent border border-gray-400 outline-none focus:border-gray-900 focus:ring-1 focus:ring-gray-900 rounded-xl sm:border-none sm:focus:ring-0 sm:focus:border-transparent"
                     required />
-                  <div data-netlify-recaptcha="true"></div>
 
                   <div class="mt-4 sm:mt-0 sm:absolute sm:inset-y-0 sm:right-0 sm:flex sm:items-center sm:pr-2">
                     <button style="background: #081158" type="submit"
