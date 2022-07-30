@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <script src="https://cdn.tailwindcss.com"></script>
-        <script src="https://unpkg.com/alpinejs" defer></script>
-        <script src="https://unpkg.com/tailwindcss-jit-cdn"></script>
-        <style type="text/tailwindcss">
-            @tailwind base;
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/alpinejs" defer></script>
+  <script src="https://unpkg.com/tailwindcss-jit-cdn"></script>
+  <style type="text/tailwindcss">
+    @tailwind base;
             @tailwind components;
             @tailwind utilities;
 
@@ -59,152 +60,161 @@
             @layer utilities {
             }
         </style>
-        <script>
-            tailwind.config = {
-                theme: {
-                    fontFamily: {
-                        inter: ['Inter'],
-                        pj: ['Plus Jakarta Sans'],
-                    },
+  <script>
+    tailwind.config = {
+      theme: {
+        fontFamily: {
+          inter: ['Inter'],
+          pj: ['Plus Jakarta Sans'],
+        },
 
-                    extend: {
-                        colors: {
+        extend: {
+          colors: {
 
-                            amber: {
-                                50: '#fffbeb',
-                                100: '#fef3c7',
-                                200: '#fde68a',
-                                300: '#fcd34d',
-                                400: '#fbbf24',
-                                500: '#f59e0b',
-                                600: '#d97706',
-                                700: '#b45309',
-                                800: '#92400e',
-                                900: '#78350f',
-                            },
-                            teal: {
-                                50: '#f0fdfa',
-                                100: '#ccfbf1',
-                                200: '#99f6e4',
-                                300: '#5eead4',
-                                400: '#2dd4bf',
-                                500: '#14b8a6',
-                                600: '#0d9488',
-                                700: '#0f766e',
-                                800: '#115e59',
-                                900: '#134e4a',
-                            },
-                            orange: {
-                                50: '#fff7ed',
-                                100: '#ffedd5',
-                                200: '#fed7aa',
-                                300: '#fdba74',
-                                400: '#fb923c',
-                                500: '#f97316',
-                                600: '#ea580c',
-                                700: '#c2410c',
-                                800: '#9a3412',
-                                900: '#7c2d12',
-                            },
-                        },
-                    },
-                },
-            }
-        </script>
-    </head>
-    <body>
-        <div class="bg-gray-50">
-            <header class="py-4 md:py-6">
-                <div class="container px-4 mx-auto sm:px-6 lg:px-8">
-                    <div class="flex items-center justify-between">
-                        <div class="flex-shrink-0">
-                            <a href="#" title="" class="flex rounded outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2">
-                                <img class="w-auto h-8" src="/images/2.png" alt="" />
-                            </a>
-                        </div>
+            amber: {
+              50: '#fffbeb',
+              100: '#fef3c7',
+              200: '#fde68a',
+              300: '#fcd34d',
+              400: '#fbbf24',
+              500: '#f59e0b',
+              600: '#d97706',
+              700: '#b45309',
+              800: '#92400e',
+              900: '#78350f',
+            },
+            teal: {
+              50: '#f0fdfa',
+              100: '#ccfbf1',
+              200: '#99f6e4',
+              300: '#5eead4',
+              400: '#2dd4bf',
+              500: '#14b8a6',
+              600: '#0d9488',
+              700: '#0f766e',
+              800: '#115e59',
+              900: '#134e4a',
+            },
+            orange: {
+              50: '#fff7ed',
+              100: '#ffedd5',
+              200: '#fed7aa',
+              300: '#fdba74',
+              400: '#fb923c',
+              500: '#f97316',
+              600: '#ea580c',
+              700: '#c2410c',
+              800: '#9a3412',
+              900: '#7c2d12',
+            },
+          },
+        },
+      },
+    }
+  </script>
+</head>
 
-                        <div class="flex lg:hidden">
-                            <button type="button" class="text-gray-900">
-                                <svg class="w-7 h-7" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"></path>
-                                </svg>
-                            </button>
-                        </div>
+<body>
+  <div class="bg-gray-50">
+    <header class="py-4 md:py-6">
+      <div class="container px-4 mx-auto sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between">
+          <div class="flex-shrink-0">
+            <a href="#" title="" class="flex rounded outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2">
+              <img class="w-auto h-8" src="/images/2.png" alt="" />
+            </a>
+          </div>
 
-                        <div class="hidden lg:ml-auto lg:flex lg:items-center lg:space-x-8 xl:space-x-10">
-                            <a style="background-color: #081158" "#email" title="" class="px-5 py-2 text-base font-bold leading-7 text-white transition-all duration-200 bg-gray-900 border border-transparent rounded-xl hover:bg-gray-600 font-pj focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900" role="button">
-                                Join Waitlist
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </header>
+          <div class="flex lg:hidden">
+            <button type="button" class="text-gray-900">
+              <svg class="w-7 h-7" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16">
+                </path>
+              </svg>
+            </button>
+          </div>
 
-            <section class="pt-12 pb-12 sm:pb-16 lg:pt-8">
-                <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-                    <div class="grid max-w-lg grid-cols-1 mx-auto lg:max-w-full lg:items-center lg:grid-cols-2 gap-y-12 lg:gap-x-16">
-                        <div>
-                            <div class="text-center lg:text-left">
-                                <h1 class="text-4xl font-bold leading-tight text-gray-900 sm:text-5xl sm:leading-tight lg:leading-tight lg:text-6xl font-pj">Rent a remote work setup for $3/day</h1>
-                                <p class="mt-2 text-lg text-gray-600 sm:mt-8 font-pj">Get access to premium monitor, ergonomic chair, keyboard and speakers wherever you are.</p>
-
-                                <form name="join" action="netlify" method="POST" class="mt-8 sm:mt-10">
-                                    <div class="relative p-2 sm:border sm:border-gray-400 group sm:rounded-xl sm:focus-within:ring-1 sm:focus-within:ring-gray-900 sm:focus-within:border-gray-900">
-                                        <input
-                                            type="email"
-                                            name="email"
-                                            id="email"
-                                            placeholder="Enter email address"
-                                            class="block w-full px-4 py-4 text-gray-900 placeholder-gray-900 bg-transparent border border-gray-400 outline-none focus:border-gray-900 focus:ring-1 focus:ring-gray-900 rounded-xl sm:border-none sm:focus:ring-0 sm:focus:border-transparent"
-                                            required
-                                        />
-                                        <div class="mt-4 sm:mt-0 sm:absolute sm:inset-y-0 sm:right-0 sm:flex sm:items-center sm:pr-2">
-                                            <button style="background: #081158" type="submit" class="inline-flex px-6 py-3 text-lg font-bold text-white transition-all duration-200 bg-gray-900 rounded-lg focus:outline-none focus:bg-gray-600 font-pj hover:bg-gray-600">Join</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-
-                            <div class="flex items-center justify-center mt-10 space-x-6 lg:justify-start sm:space-x-8">
-                                <div class="flex items-center">
-                                    <p class="text-3xl font-medium text-gray-900 sm:text-4xl font-pj">589</p>
-                                    <p class="ml-3 text-sm text-gray-900 font-pj">Workspaces<br />Delivered</p>
-                                </div>
-
-                                <div class="hidden sm:block">
-                                    <svg class="text-gray-400" width="16" height="39" viewBox="0 0 16 39" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                        <line x1="0.72265" y1="10.584" x2="15.7226" y2="0.583975"></line>
-                                        <line x1="0.72265" y1="17.584" x2="15.7226" y2="7.58398"></line>
-                                        <line x1="0.72265" y1="24.584" x2="15.7226" y2="14.584"></line>
-                                        <line x1="0.72265" y1="31.584" x2="15.7226" y2="21.584"></line>
-                                        <line x1="0.72265" y1="38.584" x2="15.7226" y2="28.584"></line>
-                                    </svg>
-                                </div>
-
-                                <div class="flex items-center">
-                                    <p class="text-3xl font-medium text-gray-900 sm:text-4xl font-pj">126</p>
-                                    <p class="ml-3 text-sm text-gray-900 font-pj">Being<br />Shipped 🚀</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div>
-                            <img class="w-full rounded" src="/images/hero.jpeg" alt="" />
-                        </div>
-                    </div>
-                </div>
-            </section>
+          <div class="hidden lg:ml-auto lg:flex lg:items-center lg:space-x-8 xl:space-x-10">
+            <a style="background-color: #081158" "#email" title=""
+              class="px-5 py-2 text-base font-bold leading-7 text-white transition-all duration-200 bg-gray-900 border border-transparent rounded-xl hover:bg-gray-600 font-pj focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+              role="button">
+              Join Waitlist
+            </a>
+          </div>
         </div>
-        
-        <footer class="py-12 bg-gray-900 sm:py-16 lg:py-20" style="background-color: #081158 ;">
-            <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+      </div>
+    </header>
 
-                
+    <section class="pt-12 pb-12 sm:pb-16 lg:pt-8">
+      <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div
+          class="grid max-w-lg grid-cols-1 mx-auto lg:max-w-full lg:items-center lg:grid-cols-2 gap-y-12 lg:gap-x-16">
+          <div>
+            <div class="text-center lg:text-left">
+              <h1
+                class="text-4xl font-bold leading-tight text-gray-900 sm:text-5xl sm:leading-tight lg:leading-tight lg:text-6xl font-pj">
+                Rent a remote work setup for $3/day</h1>
+              <p class="mt-2 text-lg text-gray-600 sm:mt-8 font-pj">Get access to premium monitor,
+                ergonomic chair, keyboard and speakers wherever you are.</p>
 
-                <div class="lg:flex lg:items-center lg:justify-between ">
-                    <p class=" text-lg font-normal text-white lg:mt-0 font-pj">© Copyright 2022, workspace All Rights Reserved</p>
+              <form name="join" data-netlify="true" action="/thanks" method="POST" class="mt-8 sm:mt-10">
+                <div
+                  class="relative p-2 sm:border sm:border-gray-400 group sm:rounded-xl sm:focus-within:ring-1 sm:focus-within:ring-gray-900 sm:focus-within:border-gray-900">
+                  <input type="email" name="email" id="email" placeholder="Enter email address"
+                    class="block w-full px-4 py-4 text-gray-900 placeholder-gray-900 bg-transparent border border-gray-400 outline-none focus:border-gray-900 focus:ring-1 focus:ring-gray-900 rounded-xl sm:border-none sm:focus:ring-0 sm:focus:border-transparent"
+                    required />
+                  <div class="mt-4 sm:mt-0 sm:absolute sm:inset-y-0 sm:right-0 sm:flex sm:items-center sm:pr-2">
+                    <button style="background: #081158" type="submit"
+                      class="inline-flex px-6 py-3 text-lg font-bold text-white transition-all duration-200 bg-gray-900 rounded-lg focus:outline-none focus:bg-gray-600 font-pj hover:bg-gray-600">Join</button>
+                  </div>
                 </div>
+              </form>
             </div>
-        </footer>
-    </body>
+
+            <div class="flex items-center justify-center mt-10 space-x-6 lg:justify-start sm:space-x-8">
+              <div class="flex items-center">
+                <p class="text-3xl font-medium text-gray-900 sm:text-4xl font-pj">589</p>
+                <p class="ml-3 text-sm text-gray-900 font-pj">Workspaces<br />Delivered</p>
+              </div>
+
+              <div class="hidden sm:block">
+                <svg class="text-gray-400" width="16" height="39" viewBox="0 0 16 39" fill="none" stroke="currentColor"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <line x1="0.72265" y1="10.584" x2="15.7226" y2="0.583975"></line>
+                  <line x1="0.72265" y1="17.584" x2="15.7226" y2="7.58398"></line>
+                  <line x1="0.72265" y1="24.584" x2="15.7226" y2="14.584"></line>
+                  <line x1="0.72265" y1="31.584" x2="15.7226" y2="21.584"></line>
+                  <line x1="0.72265" y1="38.584" x2="15.7226" y2="28.584"></line>
+                </svg>
+              </div>
+
+              <div class="flex items-center">
+                <p class="text-3xl font-medium text-gray-900 sm:text-4xl font-pj">126</p>
+                <p class="ml-3 text-sm text-gray-900 font-pj">Being<br />Shipped 🚀</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <img class="w-full rounded" src="/images/hero.jpeg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="py-12 bg-gray-900 sm:py-16 lg:py-20" style="background-color: #081158 ;">
+    <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+
+
+
+      <div class="lg:flex lg:items-center lg:justify-between ">
+        <p class=" text-lg font-normal text-white lg:mt-0 font-pj">© Copyright 2022, workspace All Rights
+          Reserved</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
